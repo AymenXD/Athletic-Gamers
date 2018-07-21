@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<!--
+	Aesthetic by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
+<html>
+	<head>
+	<link rel="Icon" href="images2/logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Athletic Gamers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="gettemplates.co" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+<style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0} 
+            to {top:0; opacity:1}
+        }
+        
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+        
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #148F77;
+            color: white;
+        }
+        
+        .modal-body {padding: 2px 16px;}
+        
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #148F77;
+            color: white;
+        }
+        </style>
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 text-right gtco-contact">
+					<ul class="">
+						<li><a href="#"><i class="ti-mobile"></i> +216 26 668 617 </a></li>
+						<li><a href="http://twitter.com/"><i class="ti-twitter-alt"></i> </a></li>
+						<li><a href="https://www.gmail.com/"><i class="icon-mail2"></i></a></li>
+						<li><a href="https://www.facebook.com/"><i class="ti-facebook"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="index.html">Athletic Gamers <em>.</em></a></div>
+				</div>
+				<div class="col-xs-8 text-right menu-1">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="News.html">News</a></li>
+						<li class="active"><a href="Events.html">Events</a></li>
+						<li><a href="">Shop</a></li>
+						<li ><a href="2K18 Games.html">2K18 Games</a></li>
+						<li><a href="contact.html">Join our Community !</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<header id="gtco-header" class="gtco-cover gtco-cover-xs" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc">
+							<h1 class="animate-box" data-animate-effect="fadeInUp">Events</h1>
+							<h2 class="animate-box" data-animate-effect="fadeInUp">A weekly updated page so that you won't miss any event.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="gtco-section">
+		<div class="gtco-container">
+			<div class="row row-pb-md">
+				<div class="col-md-12">
+					<ul id="gtco-portfolio-list">
+						<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_1.jpg); "> 
+							<a href="#" class="color-1">
+								<div class="case-studies-summary">
+									<span>BANZAI</span>
+									<h2>Get your cosplays on</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_2.jpg); ">
+							<a href="#" class="color-2">
+								<div class="case-studies-summary">
+									<span>Comic Con</span>
+									<h2>A lot of visitors said that the second day was the best but the thrid was very unorganized</h2>
+								</div>
+							</a>
+						</li>
+
+
+						<li class="one-half animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_3.png); ">
+							<a href="#" class="color-3">
+								<div class="case-studies-summary">
+									<span>Carthage Games Show</span>
+									<h2>Draco is not joking about his event</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-half animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_4.jpg); ">
+							<a href="#" class="color-4">
+								<div class="case-studies-summary">
+									<span>THE BEST OF THREE</span>
+									<h2>Biggest League of Legends tunisian tournament</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_6.png); "> 
+							<a href="#" class="color-5">
+								<div class="case-studies-summary">
+									<span>E3</span>
+									<h2>biggest trailers for the biggest Video Games</h2>
+								</div>
+							</a>
+						</li>
+						<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_5.jpg); ">
+							<a href="#" class="color-6">
+								<div class="case-studies-summary">
+									<span>GAMES COM</span>
+									<h2>expostions, trailers, conferences ect....</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_9.jpg); "> 
+							<a href="#" class="color-1">
+								<div class="case-studies-summary">
+									<span>BANZAI</span>
+									<h2>Get you tickets from teskerti.tn</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_8.jpg); ">
+							<a href="#" class="color-2">
+								<div class="case-studies-summary">
+									<span>Black Panther</span>
+									<h2>Guess who won the 2018 Comic Con cosplay tournament</h2>
+								</div>
+							</a>
+						</li>
+
+
+						<li class="one-half animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_7.jpg); ">
+							<a href="#" class="color-3">
+								<div class="case-studies-summary">
+									<span>PUBG</span>
+									<h2>Best PUBG event of the year</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-half animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_4.jpg); ">
+							<a href="#" class="color-4">
+								<div class="case-studies-summary">
+									<span>Web Design</span>
+									<h2>The Peaceful Place On Earth</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_11.jpg); "> 
+							<a href="#" class="color-5">
+								<div class="case-studies-summary">
+									<span>Carthage Games Show</span>
+									<h2>Honor Guest: Nouha Mokni</h2>
+								</div>
+							</a>
+						</li>
+						<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img_10.jpg); ">
+							<a href="#" class="color-6">
+								<div class="case-studies-summary">
+									<span>Assassin's Creed Odyssey</span>
+									<h2>experience the life of a roman soldier who turned into an assassin at the Games Com event</h2>
+								</div>
+							</a>
+						</li>
+					</ul>		
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 text-center animate-box">
+					<a id="myBtn" class="btn btn-primary btn-lg btn-block">Have An Event? Tell us About It</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+<!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h1>Inform Us!</h1>
+              </div>
+              <div class="modal-body">
+                      <div class="container">
+                              <div class="imagebg"></div>
+                              <div class="row " style="margin-top: 50px">
+                                  <div class="col-md-6 col-md-offset-3 form-container">
+                                    <form action="/action_page.php" id="form2" method="get">
+                                    	<p>Choose</p>
+                                        <input list="browsers" name="browser">
+                                        <datalist id="browsers">
+                                          <option value="News">
+                                          <option value="Event">
+                                       
+                                        </datalist>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-12 form-group">
+                                                <label for="comments"> Comments:</label>
+                                                <br>
+                                                <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                                            </div>
+                                        </div>        
+                                        
+                                      </form>
+                                          <div class="row">
+                                              <div class="col-sm-12 form-group">
+                                                  <button id="submit" type="submit" class="btn btn-default" >Submit</button>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                          
+              </div>
+
+
+
+
+              <div class="modal-footer">
+                <h3><br></h3>
+              </div>
+            </div>
+          
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+
+
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+			<div class="row row-pb-md">
+
+				<div class="col-md-4">
+					<div class="gtco-widget">
+						<h3>About Us</h3>
+						<p>we are a team of 4 people. Our main idea or you can actually goal is to teach young tunisians that they need to create their own </p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-md-push-1">
+					
+				</div>
+
+				<div class="col-md-4">
+					<div class="gtco-widget">
+						<h3>Get In Touch</h3>
+						<ul class="gtco-quick-contact">
+							<li><a href="#"><i class="icon-phone"></i> +216 26 668 617</a></li>
+							<li><a href="#"><i class="icon-mail2"></i> athletic.gamers@gmail.com</a></li>
+							<li><a href="#"><i class="icon-chat"></i> Chat</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12">
+
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+<script src="js/informus.js"></script>
+	</body>
+</html>
+
